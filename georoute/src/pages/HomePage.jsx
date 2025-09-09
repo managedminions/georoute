@@ -53,50 +53,42 @@ function HomePage() {
                     <div className="row">
                         <div className="form-inline mb-0">
                             <div className="row d-flex align-items-center">
-                                <div className="col-lg-2">
+                                <div className="col-lg-3 p-0">
                                     <div className="form-group">
-                                        <input className="form-control mb-2" id="origin" name="origin" placeholder="Starting Address" type="text" autoFocus />
+                                        <input className="form-control mb-2 pe-2" id="origin" name="origin" placeholder="Starting Address" type="text" autoFocus />
                                     </div>
                                 </div>
-                                <div className="col-lg-2">
+                                <div className="col-lg-3 p-0">
                                     <div className="form-group">
-                                        <input className="form-control mb-2" id="destination" name="destination" placeholder="Ending Address" type="text" />
+                                        <input className="form-control mb-2 ms-2" id="destination" name="destination" placeholder="Ending Address" type="text" />
                                     </div>
                                 </div>
-                                <div className="col-lg-3">
+                                <div className="col-lg-2 p-0">
                                     <div className="form-group">
-                                        <button
-                                            className="btn btn-sm btn-outline-success me-2"
-                                            id="start-btn"
-                                            type="button">
-                                            Start
+                                        <button className="btn btn-sm btn-outline-danger float-end" id="clear-btn" type="button">
+                                            <i class="fa-solid fa-stop" title="Reset"></i>
                                         </button>
                                         <button
-                                            className="btn btn-sm btn-outline-primary me-2"
-                                            id="default-btn"
-                                            type="button">
-                                            Default
+                                            className="btn btn-sm btn-outline-primary me-1 float-end" id="default-btn" type="button">
+                                            <i class="fa-solid fa-location-dot" title="Current Location"></i>
                                         </button>
-                                        <button
-                                            className="btn btn-sm btn-outline-danger"
-                                            id="clear-btn"
-                                            type="button">
-                                            Reset
+                                        <button className="btn btn-sm btn-outline-success me-1 float-end" id="start-btn" type="button">
+                                            <i class="fa-solid fa-play" title="Start"></i>
                                         </button>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-lg-7 mb-2">
-                                    <div className="alert bg-info-subtle mb-2" id="message-box" role="alert">Click anywhere on the map to set your starting point.</div>
+                                <div className="col-lg-8 mb-2 p-0">
+                                    <div className="alert bg-info-subtle mb-2" id="message-box" role="alert"><strong>Instructions: </strong>Click anywhere on the map to set your starting point.</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="col-md-7 mb-4 mb-md-0 rounded-5" style={{ height: '450px' }} id="map">
+                        <div className="col-md-8 mb-4 mb-md-0 rounded-5" style={{ height: '450px' }} id="map">
                         </div>
 
-                        <div className="col-md-5 ps-3">
+                        <div className="col-md-4 ps-3">
                             <h2 className="display-6 fw-bold text-dark" id="section-title">What is Georoute?</h2>
                             <p className="mt-3 text-muted fs-5" id="section-description">
                                 <strong>Georoute</strong> is a cloud-based platform that uses advanced geospatial
