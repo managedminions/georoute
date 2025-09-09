@@ -28,6 +28,9 @@ var endInput = document.getElementById("destination");
 var title = document.getElementById("section-title");
 var description = document.getElementById("section-description");
 
+// Set intial focus
+startInput.focus();
+
 // --- UI Functions ---
 var updateMessage = (message, type = "info") => {
     let colorClass = "";
