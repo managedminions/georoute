@@ -191,28 +191,7 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
                                 <div className="card-body d-flex flex-column align-items-center">
-                                    <svg
-                                        className="text-primary mb-3"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        style={{
-                                            height: "3rem",
-                                            width: "3rem",
-                                        }}
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M14.752 11.168l-3.197 3.197m0 0L8.358 12.37M11.555 14.365a4.01 4.01 0 01-5.679 0c-1.57-1.57-1.57-4.116 0-5.686a4.01 4.01 0 015.679 0c1.57 1.57 1.57 4.116 0 5.686z"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                        />
-                                        <path
-                                            d="M21 21l-4.5-4.5"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                        />
-                                    </svg>
+                                    <i class="fa-solid fa-location-dot text-primary text-opacity-75 fa-3x mb-4"></i>
                                     <h3 className="h5 fw-bold text-dark mt-2">
                                         Optimal Pathfinding
                                     </h3>
@@ -226,26 +205,11 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
                                 <div className="card-body d-flex flex-column align-items-center">
-                                    <svg
-                                        className="text-primary mb-3"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        style={{
-                                            height: "3rem",
-                                            width: "3rem",
-                                        }}
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                        />
-                                    </svg>
+                                    <i class="fa-regular fa-clock text-primary text-opacity-75 fa-3x mb-4"></i>
                                     <h3 className="h5 fw-bold text-dark mt-2">Real-Time Traffic</h3>
                                     <p className="text-muted mt-2">
-                                        Get up-to-the-minute traffic updates to dynamically adjust
-                                        routes and avoid delays.
+                                        Receive real-time traffic updates that automatically reroute you
+                                        to avoid delays and minimize frustration.
                                     </p>
                                 </div>
                             </div>
@@ -253,22 +217,7 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
                                 <div className="card-body d-flex flex-column align-items-center">
-                                    <svg
-                                        className="text-primary mb-3"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        style={{
-                                            height: "3rem",
-                                            width: "3rem",
-                                        }}
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M19 11H5a2 2 0 01-2-2V7a2 2 0 012-2h14a2 2 0 012 2v2a2 2 0 01-2 2zM3 13h18M3 17h18m-9 4h-2M15 21h-2"
-                                            strokeLinecap="round"
-                                            strokeLinejoin="round"
-                                            strokeWidth="2"
-                                        />
-                                    </svg>
+                                    <i class="fa-solid fa-layer-group text-primary text-opacity-75 fa-3x mb-4"></i>
                                     <h3 className="h5 fw-bold text-dark mt-2">
                                         Multi-Stop Planning
                                     </h3>
@@ -295,13 +244,12 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100 d-flex flex-column">
                                 <div className="card-body text-center">
-                                    <h3 className="h4 fw-bold text-dark">Basic</h3>
+                                    <h3 className="h4 fw-bold text-dark">Free Plan</h3>
                                     <p className="card-text text-muted">
                                         Perfect for small teams and individuals.
                                     </p>
                                     <p className="fs-2 fw-bold text-dark">
-                                        $29
-                                        <span className="fs-6 fw-normal text-muted">/mo</span>
+                                        FREE
                                     </p>
                                     <ul className="list-unstyled text-start">
                                         <li className="d-flex align-items-center mb-2">
@@ -320,7 +268,7 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Unlimited Routing</span>
+                                            <span>Unlimited Use</span>
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -338,7 +286,7 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Adnaced Reporting</span>
+                                            <span>5 Waypoints per Query</span>
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -356,7 +304,7 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>API Access</span>
+                                            <span>Basic Reporting</span>
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -374,13 +322,13 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Email support</span>
+                                            <span>Community support</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="card-footer bg-transparent border-0 mt-auto">
                                     <a className="btn btn-primary w-100 rounded-pill" href="#">
-                                        Choose Basic
+                                        Choose Free
                                     </a>
                                 </div>
                             </div>
@@ -396,7 +344,7 @@ function HomePage() {
                                         Ideal for growing businesses.
                                     </p>
                                     <p className="fs-2 fw-bold text-dark">
-                                        $99
+                                        $9.95
                                         <span className="fs-6 fw-normal text-muted">/mo</span>
                                     </p>
                                     <ul className="list-unstyled text-start">
@@ -416,7 +364,25 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Unlimited Routing</span>
+                                            <span>Unlimited Use</span>
+                                        </li>
+                                        <li className="d-flex align-items-center mb-2">
+                                            <svg
+                                                className="me-2"
+                                                fill="currentColor"
+                                                style={{
+                                                    color: "#10B981",
+                                                    height: "1.25rem",
+                                                    width: "1.25rem",
+                                                }}
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    clipRule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    fillRule="evenodd"
+                                                />
+                                            </svg>
+                                            <span>10 Waypoints per Query</span>
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -470,7 +436,7 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Priority Support</span>
+                                            <span>E-Mail Support</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -484,11 +450,14 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100 d-flex flex-column">
                                 <div className="card-body text-center">
-                                    <h3 className="h4 fw-bold text-dark">Enterprise</h3>
+                                    <h3 className="h4 fw-bold text-dark">Professional</h3>
                                     <p className="card-text text-muted">
                                         For large-scale operations.
                                     </p>
-                                    <p className="fs-2 fw-bold text-dark">Custom</p>
+                                    <p className="fs-2 fw-bold text-dark">
+                                        $19.95
+                                        <span className="fs-6 fw-normal text-muted">/mo</span>
+                                    </p>
                                     <ul className="list-unstyled text-start">
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -506,7 +475,7 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Dedicated Account Manager</span>
+                                            <span>Unlimited Use</span>
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -524,7 +493,7 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>Custom Integrations</span>
+                                            <span>30 Waypoints per Query</span>
                                         </li>
                                         <li className="d-flex align-items-center mb-2">
                                             <svg
@@ -542,15 +511,49 @@ function HomePage() {
                                                     fillRule="evenodd"
                                                 />
                                             </svg>
-                                            <span>24/7 Telephone Support</span>
+                                            <span>Advanced Custom Reporting</span>
+                                        </li>
+                                        <li className="d-flex align-items-center mb-2">
+                                            <svg
+                                                className="me-2"
+                                                fill="currentColor"
+                                                style={{
+                                                    color: "#10B981",
+                                                    height: "1.25rem",
+                                                    width: "1.25rem",
+                                                }}
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    clipRule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    fillRule="evenodd"
+                                                />
+                                            </svg>
+                                            <span>API Access</span>
+                                        </li>
+                                        <li className="d-flex align-items-center mb-2">
+                                            <svg
+                                                className="me-2"
+                                                fill="currentColor"
+                                                style={{
+                                                    color: "#10B981",
+                                                    height: "1.25rem",
+                                                    width: "1.25rem",
+                                                }}
+                                                viewBox="0 0 20 20">
+                                                <path
+                                                    clipRule="evenodd"
+                                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                    fillRule="evenodd"
+                                                />
+                                            </svg>
+                                            <span>Priority E-Mail Support</span>
                                         </li>
                                     </ul>
                                 </div>
                                 <div className="card-footer bg-transparent border-0 mt-auto">
-                                    <a
-                                        className="btn btn-outline-primary w-100 rounded-pill"
-                                        href="#contact">
-                                        Contact Us
+                                    <a className="btn btn-primary w-100 rounded-pill" href="#">
+                                        Choose Professional
                                     </a>
                                 </div>
                             </div>
