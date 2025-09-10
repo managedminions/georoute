@@ -22,8 +22,9 @@ jobs:
     - run: echo "Node version 22 is now available."
 
     - name: Install Dependencies
-    - working-directory: ./georoute
+      working-directory: ./georoute
     - run: npm install
+    - run: echo "Dependendcies are now installed."
     
     - name: Build site
       working-directory: ./georoute
