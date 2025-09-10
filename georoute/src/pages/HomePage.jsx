@@ -67,14 +67,14 @@ function HomePage() {
                                     <div className="col-lg-2 p-0">
                                         <div className="form-group">
                                             <button className="btn btn-sm btn-outline-danger float-end" id="clear-btn" type="button">
-                                                <i class="fa-solid fa-stop" title="Reset"></i>
+                                                <i className="fa-solid fa-stop" title="Reset"></i>
                                             </button>
                                             <button
                                                 className="btn btn-sm btn-outline-primary me-1 float-end" id="default-btn" type="button">
-                                                <i class="fa-solid fa-location-dot" title="Current Location"></i>
+                                                <i className="fa-solid fa-location-dot" title="Current Location"></i>
                                             </button>
                                             <button className="btn btn-sm btn-outline-success me-1 float-end" id="start-btn" type="button">
-                                                <i class="fa-solid fa-play" title="Start"></i>
+                                                <i className="fa-solid fa-play" title="Start"></i>
                                             </button>
                                         </div>
                                     </div>
@@ -102,11 +102,11 @@ function HomePage() {
                             </div>
                             <div className="d-none" id="route-details">
                                 <h2 className="display-6 fw-bold text-dark">Route Summary</h2>
-                                <div className="row">
-                                    <div className="col-6 rounded-3">
+                                <div className="row" style={{ height: '100px' }}>
+                                    <div className="col-4 d-flex h-100 m-3 p-2 rounded-5 bg-success-subtle justify-content-center align-items-center">
                                         <h4 className="font-semibold" id="distance-box" />
                                     </div>
-                                    <div className="col-6 rounded-3">
+                                    <div className="col-4 d-flex h-100 m-3 p-2 rounded-5 bg-success-subtle justify-content-center align-items-center">
                                         <h4 className="font-semibold" id="time-box" />
                                     </div>
                                 </div>
@@ -191,7 +191,7 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
                                 <div className="card-body d-flex flex-column align-items-center">
-                                    <i class="fa-solid fa-location-dot text-primary text-opacity-75 fa-3x mb-4"></i>
+                                    <i className="fa-solid fa-location-dot text-primary text-opacity-75 fa-3x mb-4"></i>
                                     <h3 className="h5 fw-bold text-dark mt-2">
                                         Optimal Pathfinding
                                     </h3>
@@ -205,7 +205,7 @@ function HomePage() {
                         <div className="col-md-4">
                             <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
                                 <div className="card-body d-flex flex-column align-items-center">
-                                    <i class="fa-regular fa-clock text-primary text-opacity-75 fa-3x mb-4"></i>
+                                    <i className="fa-regular fa-clock text-primary text-opacity-75 fa-3x mb-4"></i>
                                     <h3 className="h5 fw-bold text-dark mt-2">Real-Time Traffic</h3>
                                     <p className="text-muted mt-2">
                                         Receive real-time traffic updates that automatically reroute you
