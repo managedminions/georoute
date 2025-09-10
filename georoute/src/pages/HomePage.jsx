@@ -91,7 +91,7 @@ function HomePage() {
                         <div className="col-lg-5">
                             <h2 className="display-6 fw-bold text-dark" id="section-title">What is Georoute?</h2>
                             <p className="mt-3 text-muted fs-5" id="section-description">
-                                <b>Georoute</b> is a cloud-based platform that leverages advanced geospatial(!)
+                                <b>Georoute</b> is a cloud-based platform that leverages advanced geospatial
                                 technology to solve complex routing problems. By determining the most efficient
                                 routes between destinations, it helps businesses reduce fuel cost, minimize travel
                                 time, and improve overall operational efficiency.
