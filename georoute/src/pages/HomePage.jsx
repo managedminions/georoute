@@ -101,7 +101,7 @@ function HomePage() {
                                 <p className="mt-2">Calculating route...</p>
                             </div>
                             <div className="d-none" id="route-details">
-                                <h2 className="display-6 fw-bold text-dark">Driving Directions</h2>
+                                <h2 className="display-6 fw-bold text-dark">Route Summary</h2>
                                 <div className="row">
                                     <div className="col-6 rounded-3">
                                         <h4 className="font-semibold" id="distance-box" />

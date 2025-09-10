@@ -19,7 +19,6 @@ var clearBtn = document.getElementById("clear-btn");
 var routeDetails = document.getElementById("route-details");
 var distanceBox = document.getElementById("distance-box");
 var timeBox = document.getElementById("time-box");
-var directionsList = document.getElementById("directions-list");
 var startBtn = document.getElementById("start-btn");
 var defaultBtn = document.getElementById("default-btn");
 var resetBtn = document.getElementById("reset-btn");
@@ -78,13 +77,6 @@ var displayRouteDetails = (data) => {
     timeString += `${minutes} min`;
     timeBox.textContent = timeString;
 
-    directionsList.innerHTML = "";
-    segment.steps.forEach((step) => {
-        const listItem = document.createElement("li");
-        const distance = (step.distance * 0.000621371).toFixed(2);
-        listItem.innerHTML = `<span class="font-semibold">${step.instruction}</span> <span class="text-gray-500 text-sm">(${distance} miles)</span>`;
-        directionsList.appendChild(listItem);
-    });
 };
 
 var clearMap = () => {
@@ -108,7 +100,6 @@ var clearMap = () => {
     description.classList.remove("d-none");
     distanceBox.textContent = "";
     timeBox.textContent = "";
-    directionsList.innerHTML = "";
 };
 
 var clearRoute = () => {
