@@ -23,7 +23,7 @@ jobs:
 
     - name: Install Dependencies
       working-directory: ./georoute
-    - run: npm install
+      run: npm install
     - run: echo "Dependendcies are now installed."
     
     - name: Build site
