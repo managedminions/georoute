@@ -1,0 +1,30 @@
+    name: Deploy GitHub Pages
+
+    on:
+      push:
+        branches:
+          - master
+
+    jobs:
+      build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+
+          - name: Set up Node.js (if needed for static site generators)
+            uses: actions/setup-node@v4
+            with:
+              node-version: '22' # Or your preferred Node.js version
+
+          - name: Build site (if needed)
+            run: npm run build
+
+          - name: Configure domain
+            run: echo 'managedminions.com' > ./dist/CNAME
+
+          - name: Deploy to GitHub Pages
+            uses: JamesIves/github-pages-deploy-action@v4
+            with:
+              branch: gh-pages
+              folder: dist
