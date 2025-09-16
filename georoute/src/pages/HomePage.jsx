@@ -229,6 +229,48 @@ function HomePage() {
                             </div>
                         </div>
                     </div>
+                    <div className="row mt-5 g-4">
+                        <div className="col-md-4">
+                            <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
+                                <div className="card-body d-flex flex-column align-items-center">
+                                    <i className="fa-regular fa-envelope text-primary text-opacity-75 fa-3x mb-4"></i>
+                                    <h3 className="h5 fw-bold text-dark mt-2">
+                                        Address Standardization
+                                    </h3>
+                                    <p className="text-muted mt-2">
+                                        Route addresses are automatically corrected and standardized by the USPS
+                                        to ensure they are deliverable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
+                                <div className="card-body d-flex flex-column align-items-center">
+                                    <i className="fa-regular fa-clock text-primary text-opacity-75 fa-3x mb-4"></i>
+                                    <h3 className="h5 fw-bold text-dark mt-2">Real-Time Traffic</h3>
+                                    <p className="text-muted mt-2">
+                                        Receive real-time traffic updates that automatically reroute you
+                                        to avoid delays and minimize frustration.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className="card p-4 rounded-5 shadow-sm border-0 h-100">
+                                <div className="card-body d-flex flex-column align-items-center">
+                                    <i class="fa-solid fa-layer-group text-primary text-opacity-75 fa-3x mb-4"></i>
+                                    <h3 className="h5 fw-bold text-dark mt-2">
+                                        Multi-Stop Planning
+                                    </h3>
+                                    <p className="text-muted mt-2">
+                                        Plan routes for multiple destinations with ease, optimizing
+                                        the sequence for maximum efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className="py-5 bg-light" id="pricing">
